@@ -1,0 +1,19 @@
+!!!
+%html
+%head
+  %title Book
+  = stylesheet_link_tag    "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+  %link{ href:'http://fonts.googleapis.com/css?family=Bitter:400,700,400italic', rel:'stylesheet', type:'text/css' }
+
+
+%body
+  .header
+    &nbsp;
+  .container
+    = yield
+
+  -#.footer
+    .container
+      = render 'layouts/creative_commons'
