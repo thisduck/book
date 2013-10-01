@@ -3,6 +3,7 @@ Book::Application.routes.draw do
   root :to => redirect("/volume-one")
 
   match 'volume-one' => 'home#index'
+  match 'volume-one/book' => 'home#book'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
