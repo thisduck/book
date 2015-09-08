@@ -4,6 +4,7 @@ Book::Application.routes.draw do
 
   match 'volume-one' => 'home#index'
   match 'volume-one/book' => 'home#book'
+  match 'volume-one/audio' => 'home#audio'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
