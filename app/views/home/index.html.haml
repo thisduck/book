@@ -1,37 +1,10 @@
 .col-md-1
 .col-md-5
-  = image_tag 'coveronly2.80.jpg', class: "img-responsive"
-.col-md-5.book-text
-  %h2
-    nothing. volume one. 
-  %p.lead.book-caption
-    a set of raw sentiments pretending to be poems.
-
-  %p
-    The book is available in print format here:
-
-  %ul
-    %li= link_to "Amazon Canada", "http://www.amazon.ca/Nothing-vol-1-Adnan-Ali/dp/1492344443"
-    %li= link_to "Amazon US", "http://www.amazon.com/Nothing-vol-1-Adnan-Ali/dp/1492344443"
-    %li= link_to "Amazon UK", "http://www.amazon.co.uk/Nothing-vol-1-Adnan-Ali/dp/1492344443"
-    %li= link_to "Barnes & Noble", "http://www.barnesandnoble.com/w/nothing-volume-one-adnan-ali/1116911785"
-      
-  %p
-    It is also available for e-readers here:
-
-  %ul
-    %li= link_to "Amazon Kindle Canada", "http://www.amazon.ca/nothing-volume-one-ebook/dp/B00F3WRBNE"
-    %li= link_to "Amazon Kindle US", "http://www.amazon.com/nothing-volume-one-ebook/dp/B00F3WRBNE"
-    %li= link_to "Amazon Kindle UK", "http://www.amazon.co.uk/nothing-volume-one-ebook/dp/B00F3WRBNE"
-    %li= link_to "Chapters Indigo Kobo", "http://www.chapters.indigo.ca/books/nothing-volume-one/9990006776751-item.html"
-    %li= link_to "Kobo Books", "http://store.kobobooks.com/en-CA/ebook/nothing-volume-one"
-
-  %p
-    Finally, it is available here for download in PDF and audio (MP3):
-
-  %ul
-    %li= link_to "nothing. volume one. pdf", "/volume-one/book.pdf"
-    %li= link_to "nothing. volume one. audio", "/volume-one/audio"
-
+  = link_to '/volume-one' do
+    = image_tag 'volume-one.jpg', class: "img-responsive"
+  %br/
+.col-md-5
+  = link_to '/volume-two' do
+    = image_tag 'volume-two.jpg', class: "img-responsive"
 .col-md-1
 
